@@ -46,21 +46,17 @@ function viewCart() {
     }
     console.log(string);
   }
-    /*
-    for(var i=0;i<cart.length;i++) {
-      var itemObj = cart[i];
-      var itemName = Object.keys(itemObj);
-      var itemPrice = itemObj[itemName];
-      var itemString = `${itemName} at $${itemPrice}`;
-    }
-    */
+}
 
 
-  }
-
-/*
 function total() {
-  // write your code here
+  var totalPrice = 0;
+  for(var i=0;i<cart.length;i++) {
+    var item = Object.keys(cart[i]);
+    var price = cart[i][item];
+    totalPrice += price;
+  }
+  return totalPrice;
 }
 
 function removeFromCart(item) {
@@ -70,4 +66,3 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-*/
