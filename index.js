@@ -32,6 +32,7 @@ function viewCart() {
       stringList.push(itemString);
     }
   }
+  return string;
 }
 /*
 function total() {
