@@ -22,12 +22,17 @@ function viewCart() {
   if(cart.length===0) {
     console.log("Your shopping cart is empty.")
   } else if(cart.length===1) {
-      var string = "In your cart, you have ";
       var itemObj = cart[0];
       var itemName = Object.keys(itemObj);
       var itemPrice = itemObj[itemName];
       console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
-    }
+  } else if(cart.length===2) {
+    var itemOne = Object.keys(cart[0]);
+    var priceOne = cart[0][itemOne];
+    var itemTwo = Object.keys(cart[1]);
+    var priceTwo = cart[2][itemTwo];
+    console.log(`In your cart, you have ${itemOne} at $${priceOne} and ${itemTwo} at $${priceTwo}.`)
+  }
     /*
     for(var i=0;i<cart.length;i++) {
       var itemObj = cart[i];
