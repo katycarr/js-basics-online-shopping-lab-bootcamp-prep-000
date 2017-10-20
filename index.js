@@ -41,7 +41,7 @@ function viewCart() {
         string = `${string} ${item} at $${price}, `
       }
       else {
-        string = `${string} ${item} at $${price}.`
+        string = `${string} and ${item} at $${price}.`
       }
     }
     console.log(string);
