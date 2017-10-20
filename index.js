@@ -18,7 +18,7 @@ function addToCart(item) {
  return cart;
 }
 
-function viewCart() {
+/* function viewCart() {
   if(cart.length===0) {
     console.log("Your shopping cart is empty.")
   } else if(cart.length===1) {
@@ -26,17 +26,17 @@ function viewCart() {
     var price = 
     string = string+`${item} at $${price}.`;
   } else if(cart.length===2) {
-    string = 
-  } 
+    string =
+  }
 
   else {
     var string = "In your cart, you have ";
     for(i=0;i<cart.length;i++) {
       var item = cart[i];
       var price = cart[i][item];
-      
-      
-      
+
+
+
     }
   }
 }
@@ -52,3 +52,4 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+*/
