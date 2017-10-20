@@ -31,6 +31,10 @@ function viewCart() {
       var itemString = `${itemName} at $${itemPrice}`;
       stringList.push(itemString);
     }
+    if(stringList.length===1) {
+      var newString = itemString[0];
+      string = `${string} ${newString}.`;
+    }
   }
   return string;
 }
