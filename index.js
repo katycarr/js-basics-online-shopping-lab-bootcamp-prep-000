@@ -32,6 +32,19 @@ function viewCart() {
     var itemTwo = Object.keys(cart[1]);
     var priceTwo = cart[1][itemTwo];
     console.log(`In your cart, you have ${itemOne} at $${priceOne} and ${itemTwo} at $${priceTwo}.`)
+  } else {
+    var string = "In your cart, you have ";
+    for(var i=0;i<cart.length;i++) {
+      var item = Object.keys(cart[i]);
+      var price = cart[i][item];
+      if(i != cart.length-1) {
+        string = `${string} ${item} at $${price}, `
+      }
+      else {
+        string = `${string} ${item} at $${price}.`
+      }
+    }
+    console.log(string);
   }
     /*
     for(var i=0;i<cart.length;i++) {
