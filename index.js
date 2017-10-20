@@ -24,7 +24,7 @@ function viewCart() {
   }  else {
     var string = "In your cart, you have ";
     var stringList = [];
-    for(i=0;i<cart.length;i++) {
+    for(var i=0;i<cart.length;i++) {
       var itemObj = cart[i];
       var itemName = Object.keys(itemObj);
       var itemPrice = itemObj[itemName];
