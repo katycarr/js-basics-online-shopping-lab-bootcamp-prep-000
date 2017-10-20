@@ -29,15 +29,12 @@ function viewCart() {
       var itemName = Object.keys(itemObj);
       var itemPrice = itemObj[itemName];
       var itemString = `${itemName} at $${itemPrice}`;
-      stringList.push(itemString);
-      return stringList;
     }
-    if(stringList.length===1) {
-      var newString = itemString[0];
-      string = `${string} ${newString}.`;
+    if(cart.length===1) {
+      string = `${string} ${itemString}.`;
     }
   }
-  return string;
+  console.log(string);
 }
 /*
 function total() {
