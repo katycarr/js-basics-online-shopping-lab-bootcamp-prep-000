@@ -32,8 +32,8 @@ function viewCart() {
     }
     if(cart.length===1) {
       string = `${string} ${itemString}.`;
-      console.log(string);
     }
+    console.log(string);
   }
 }
 /*
