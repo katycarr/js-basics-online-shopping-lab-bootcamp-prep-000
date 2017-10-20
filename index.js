@@ -33,7 +33,7 @@ function viewCart() {
     var priceTwo = cart[1][itemTwo];
     console.log(`In your cart, you have ${itemOne} at $${priceOne} and ${itemTwo} at $${priceTwo}.`)
   } else {
-    var string = "In your cart, you have ";
+    var string = "In your cart, you have";
     for(var i=0;i<cart.length;i++) {
       var item = Object.keys(cart[i]);
       var price = cart[i][item];
