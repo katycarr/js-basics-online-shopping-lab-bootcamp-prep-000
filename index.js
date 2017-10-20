@@ -60,7 +60,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  startLength = cart.length;
+  var startLength = cart.length;
   for(var i=0;i<cart.length;i++) {
     var itemName = Object.keys(cart[i]);
     if(item===itemName) {
