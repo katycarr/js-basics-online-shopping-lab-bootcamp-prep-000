@@ -24,7 +24,7 @@ function viewCart() {
   }  else {
     var string = "In your cart, you have ";
     if(cart.length===1) {
-      var itemObj = cart[i];
+      var itemObj = cart[0];
       var itemName = Object.keys(itemObj);
       var itemPrice = itemObj[itemName];
       var itemString = `${itemName} at $${itemPrice}`;
