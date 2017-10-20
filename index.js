@@ -30,6 +30,7 @@ function viewCart() {
       var itemPrice = itemObj[itemName];
       var itemString = `${itemName} at $${itemPrice}`;
       stringList.push(itemString);
+      return stringList;
     }
     if(stringList.length===1) {
       var newString = itemString[0];
